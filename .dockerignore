@@ -1,0 +1,11 @@
+# Keep the build context small/fast — exclude things the web build doesn't need.
+.git
+.dart_tool
+build
+backend
+supabase
+ios
+android
+.idea
+.vscode
+**/*.iml
