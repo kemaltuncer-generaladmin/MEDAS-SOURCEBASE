@@ -1,0 +1,10 @@
+{
+  "imports": {
+    "@supabase/functions-js/": "https://deno.land/x/supabase/functions-js/",
+    "is-glob": "https://deno.land/x/is_glob@v1.0.0/mod.ts",
+    "itty-router": "https://deno.land/x/itty_router@v4.0.21/mod.ts",
+    "https://deno.land/std@0.177.0/testing/asserts.ts": "https://deno.land/std@0.177.0/testing/asserts.ts",
+    "https://deno.land/std@0.177.0/datetime/mod.ts": "https://deno.land/std@0.177.0/datetime/mod.ts",
+    "https://deno.land/std@0.177.0/http/server.ts": "https://deno.land/std@0.177.0/http/server.ts"
+  }
+}
