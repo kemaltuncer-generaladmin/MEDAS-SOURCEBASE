@@ -15,6 +15,7 @@ RUN flutter build web --release
 FROM nginx:alpine
 COPY --from=build /app/build/web /usr/share/nginx/html
 COPY nginx.conf /etc/nginx/conf.d/default.conf
-EXPOSE 80
+# Serve on 3000 to match Coolify's default proxy target.
+EXPOSE 3000
 HEALTHCHECK --interval=30s --timeout=3s --start-period=5s --retries=3 \
-  CMD wget -qO- http://127.0.0.1/ >/dev/null || exit 1
+  CMD wget -qO- http://127.0.0.1:3000/ >/dev/null || exit 1
